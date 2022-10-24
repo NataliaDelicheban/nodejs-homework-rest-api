@@ -1,11 +1,10 @@
 const messages = {
-    400: "Bad Request",
+    400: "Missing required fields",
     401: "Unauthorized",
     403: "Forbbiden",
     404: "Not found",
     409: "Conflict"
 }
-
 
 const RequestError = (status, message = messages[status]) => {
     const error = new Error(message);
